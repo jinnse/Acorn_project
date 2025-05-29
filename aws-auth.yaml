@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
+data:
+  mapRoles: |
+    - rolearn: arn:aws:iam::886723286293:role/AWSReservedSSO_AdministratorAccess_be811d95ad9f0f4a
+      username: admin
+      groups:
+        - system:masters

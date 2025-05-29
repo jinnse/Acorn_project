@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: class-deploy
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: class
+  template:
+    metadata:
+      labels:
+        app: class
+    spec:
+      containers:
+        - name: class-ctn
+          image: choicco89/aws9-eks-reg:v1
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+
+        - name: stress
+          image: progrium/stress
+          args: ["--cpu", "1", "--timeout", "300s"]
+          resources:
+            requests:
+              cpu: "300m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
