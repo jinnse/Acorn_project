@@ -15,7 +15,7 @@
 # terraform apply -target=module.vpc -auto-approve
 # terraform apply -target=module.eks -auto-approve
 
-# # 2단계: 클러스터 정보 추출
+# # 2단계: 클러스터 정보 추출 output.tf 에 아래 내용이 있어야 한다 
 # echo "[2/7] EKS 클러스터 정보 추출 중..."
 # export EKS_CLUSTER_ENDPOINT=$(terraform output -raw cluster_endpoint)
 # export EKS_CLUSTER_CA=$(terraform output -raw cluster_ca)
