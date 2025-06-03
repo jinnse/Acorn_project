@@ -93,6 +93,7 @@ module "karpenter" {
   }
 }
 
+# 모니터링 모듈 아래 source 부터는 변수 값을 참조해서 monitoring 모듈에 전달
 module "monitoring" {
   source             = "./modules/monitoring"
   region             = var.region
