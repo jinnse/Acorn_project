@@ -10,11 +10,11 @@ MSA 기반 대학 시스템을 EC2에서 EKS로 마이그레이션하여 비용 
 
 ## 인프라 구성
 > EC2 아키텍처 이미지
-<img width="965" height="633" alt="Image" src="https://github.com/user-attachments/assets/b6dd42fc-1419-415f-808e-5e6f2410dda0" />
+<img width="865" height="661" alt="Image" src="https://github.com/user-attachments/assets/2c64a06b-31e8-4880-aed2-331f888dbd4a" />
 > EKS 아키텍처 이미지
-https://github.com/jinnse/Acorn_project/issues/2#issue-4020931718
+<img width="801" height="676" alt="Image" src="https://github.com/user-attachments/assets/1aa6f8d6-603a-46ff-8a92-5d185cc64490" />
 > 무중단 마이그레이션
-https://github.com/jinnse/Acorn_project/issues/3#issue-4020935530
+<img width="965" height="633" alt="Image" src="https://github.com/user-attachments/assets/b6dd42fc-1419-415f-808e-5e6f2410dda0" />
 > *위 이미지는 EC2와 EKS 인프라 구성도를 나타냅니다.*
 
 - **주요 컴포넌트**: EKS, Karpenter, HPA, ALB, Ingress, Prometheus, Grafana, Terraform, EC2
