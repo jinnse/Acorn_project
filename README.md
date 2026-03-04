@@ -10,7 +10,7 @@ MSA 기반 대학 시스템을 EC2에서 EKS로 마이그레이션하여 비용 
 
 ## 인프라 구성
 > EC2 아키텍처 이미지
-https://github.com/jinnse/Acorn_project/issues/1#issue-4020929462
+<img width="965" height="633" alt="Image" src="https://github.com/user-attachments/assets/b6dd42fc-1419-415f-808e-5e6f2410dda0" />
 > EKS 아키텍처 이미지
 https://github.com/jinnse/Acorn_project/issues/2#issue-4020931718
 > 무중단 마이그레이션
